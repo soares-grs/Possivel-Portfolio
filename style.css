@@ -88,25 +88,7 @@ body{
     color: #828282;
 }
 
-.conteudo-principal-botao {
-    font-family: Dm Sans;
-    font-weight: bold;
-    font-size: 14px;
-    width: 180px;
-    height: 60px;
-    cursor: pointer;
-    background: transparent;
-    background-color: #5fe36a;
-    border: 1px solid #5fe36a;
-    outline: none;
-    transition: 1s ease-in-out;
-    border-radius: 28px;
-    }
 
-.conteudo-principal-botao:hover {
-    transition: .6s ease-in-out;
-    background: #29612d ;
-}
 
 
 .conteudo-secundario {
@@ -282,7 +264,7 @@ body{
 
 [data-anime] {
     opacity: 0;
-    transition: 4s;
+    transition: 2s;
 }
 
 [data-anime="bottom"] {
@@ -294,5 +276,94 @@ body{
     transform: translate3d(0px,0px,0px)
 }
 
+.subtitulo-skills {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #F9F9F9;
+    padding-bottom: 32px;
+}
+
+.conteudo-principal-botao {
+    font-family: Dm Sans;
+    font-weight: bold;
+    font-size: 14px;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    background-color: #5fe36a;
+    border: 1px solid #5fe36a;
+    outline: none;
+    transition: 1s ease-in-out;
+    border-radius: 28px;
+    cursor: pointer;
+    padding: 6px 10px;
+    text-decoration: none;
+    }
+
+.conteudo-principal-botao:hover {
+    transition: .6s ease-in-out;
+    background: #29612d ;
+}
+
+.popup-wrapper {
+    
+    display: none;
+    background: rgb( 0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.popup {
+    opacity: 1;
+    font-family: DM Sans;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 10% auto;
+    padding: 20px;
+    
+    background: radial-gradient(circle, #5fe36a 0%, rgba(2,2,2,1) 130%);
+    position: relative;
+    border-radius: 10px;
+    box-shadow: #F9F9F9;
+
+}
+
+@keyframes modal{
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
 
 
+.popup-content {
+    font-family: DM Sans;
+    color: #020202;
+    margin: 10% auto;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.popup-close {
+    color: #020202;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
