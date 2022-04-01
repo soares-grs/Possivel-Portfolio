@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho-item:hover{
+    transition: .8s;
+    color: grey;
+    animation: pulsante 1s alternate;
+
+}
+.cabecalho-item-titulo {
+    color: #F9F9F9;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 24px;
+    
+}
+
+.cabecalho-item {
+    color: #F9F9F9;
+    text-decoration: none;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    
+}
+
+@keyframes pulsante{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    75%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+

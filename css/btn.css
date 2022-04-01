@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+.conteudo-principal-botao {
+    font-family: Dm Sans;
+    font-weight: bold;
+    font-size: 14px;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    background-color: #5fe36a;
+    border: 1px solid #5fe36a;
+    outline: none;
+    transition: 1s ease-in-out;
+    border-radius: 28px;
+    cursor: pointer;
+    padding: 6px 10px;
+    text-decoration: none;
+    }
+
+.conteudo-principal-botao:hover {
+    transition: .3s ease-in-out;
+    background: #29612d ;
+}
